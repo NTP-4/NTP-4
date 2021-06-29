@@ -21,18 +21,19 @@
 .position2{
     position: relative ;
     margin-top: 20px;
-    height: 380px;
-    width: 250px;
+    height: 400px;
+    width: 300px;
     transform: translate(-50%, -50%);
     transform-style: preserve-3d;
     perspective: 600px;
     transition: 0.5s;
   }
+ 
   .profilecard:hover .profilecard-front {
-    transform: rotateX(-180deg);
+    transform: rotateY(-180deg);
   }
   .profilecard:hover .profilecard-back {
-    transform: rotateX(0deg);
+    transform: rotateY(0deg);
   }
   
   .profilecard-front {
@@ -43,9 +44,13 @@
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 10px;
+    border-color: silver;
+    border-width: 2px;
+    box-shadow: 10px 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #000000;
     backface-visibility: hidden;
-    transform: rotateX(0deg);
+    transform: rotateY(0deg);
     transition: 0.5s;
   
   }
@@ -63,9 +68,13 @@
     position: absolute;
     top: 0%;
     left: 2;
-    background-color: #000000;
+    border-radius: 10px;
+    border-color: silver;
+    border-width: 2px;
+    box-shadow: 10px 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: linear-gradient(rgba(72, 6, 126, 0.5),rgba(4, 19, 238, 0.8));
     backface-visibility: hidden;
-    transform: rotateX(180deg);
+    transform: rotateY(180deg);
     transition: 0.5s;
     color:#ffffff;
     padding-left: 2px;
@@ -77,10 +86,13 @@
     margin: 20% auto 35% auto;
     font-size: 26px;
     line-height: 20px;
+
   }
   .profilecard-back h2 span {
     font-size: 14px;
     line-height: 6px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
   
   }
   
@@ -112,6 +124,16 @@
       font-size: 20px;
       background-color: #000000;
   }  
+  /* adding profiles images */
+  #cardphoto-N_Arjun{
+    background-image: url(images-profiles/N_Arjun.jpg);
+  }
+  #cardphoto-G_Dhaval{
+    background-image: url(images-profiles/G_Dhaval.jpg);
+  }
+  #cardphoto-P_Harsh{
+    background-image: url(images-profiles/P_Harsh.jpg);
+  }
 
 /* footer css */
 .company-bio-footer{
@@ -133,4 +155,12 @@
  .position2{
      margin-left: 110px;
  }   
+ .company-bio-footer{
+   width: 80%;
+   margin-left: 10%;
+ }
+ .social-list-footer li{
+   display: inline;
+   padding-left: 10px;   
+ }
 }
